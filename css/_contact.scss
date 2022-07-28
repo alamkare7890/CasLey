@@ -1,0 +1,47 @@
+.contact-section{
+    @extend %section;
+
+    .contact-input{
+        padding: 30px 100px;
+
+        input{
+            @extend %inputSpace;
+            margin-bottom: 20px;    
+        }
+        input:focus{
+            box-shadow: none;
+            outline: none;
+
+        }
+        input::placeholder{
+            color: #424347;
+        }
+
+        textarea{
+            @extend %inputSpace;
+            margin-bottom: 20px;
+            height: 250px;    
+
+        }
+        textarea:focus{
+            box-shadow: none;
+            outline: 0;
+        }
+        textarea::placeholder{
+            color: #424347;
+        }
+        .send-box{
+            text-align: right;
+            .send-btn{
+                background-color: transparent;
+                color: $mainColor;
+                border: 1px solid $mainColor;
+                border-radius: 35px;
+                padding: 12px 20px;
+                font-size: 0.85rem;
+            }
+        }
+    }
+
+
+}

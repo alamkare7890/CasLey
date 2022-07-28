@@ -1,0 +1,17 @@
+.service-section{
+    @extend %section;
+
+    .service{
+        padding: 20px 10px;
+
+        svg{
+            width: 100px;
+            height: 100px;
+            fill: $mainColor;
+            stroke: $mainColor;
+        }
+
+    }
+
+
+}

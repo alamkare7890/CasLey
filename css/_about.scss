@@ -1,0 +1,67 @@
+.about-section{
+    @extend %section;
+    
+    .about-person{
+        img{
+            width: auto;    
+            height: 300px;
+            object-fit:scale-down;
+        }
+
+        .icon-group{ 
+
+            i{
+                font-size: 1.5rem;
+                color: $mainColor;
+                padding-left: 15px;
+            }
+        }
+
+    }
+
+
+
+}
+.about-two{
+    @extend %section;
+        
+    .slide-content{
+    }
+
+    .image{
+
+        img{
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+    }
+    .content{
+        padding: 50px 100px 50px 0;
+
+        h2{
+            position: relative;
+            left: -100px;
+            width: 150px;
+        }
+        p{
+            padding: 10px 0;
+        }
+        a{
+            font-size: 1.2rem;
+            color: $mainColor;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+        .icon-group{
+
+            a{
+                font-size: 1.5rem;
+                color: $mainColor;
+                padding-right: 15px;
+            }
+        }
+
+    }
+
+}

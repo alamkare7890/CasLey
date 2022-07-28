@@ -1,0 +1,58 @@
+.subscribe-section{
+    @extend %section;
+    padding: 100px 0;
+    .content{
+
+        form{
+
+            label{
+                font-weight: 500;
+            }
+
+            input{
+                border: none;
+                border-bottom: 3px solid $mainColor;
+                background: transparent; 
+                outline: none;      
+                font-size: 18px;
+            } 
+            input:focus{
+                border: none;
+                outline: none;
+                box-shadow: none;
+                border-bottom: 3px solid $mainColor;
+
+            }
+            input::placeholder{
+                color: #424347;
+                font-size: 18px;
+            }
+        }
+    }
+    .follow-up{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .social-icon{
+        position: absolute;
+        right: 0;   
+        bottom: 0;
+        ul{
+            flex-direction: row;
+           
+            li{
+                padding-left: 15px;
+                list-style-type: none;
+
+
+            }
+            a{
+                color: $mainColor;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}

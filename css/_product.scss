@@ -1,0 +1,21 @@
+.product-section{
+
+    .product{
+        padding-bottom: 20px;
+        .image{ 
+            img{
+                width: 100%;
+                height: 350px;
+            }
+        }
+        .rate{
+        padding-top: 20px;
+        justify-content: flex-end;
+
+        }
+        h4{
+            text-align: center;
+            font-weight: 600;
+        }
+    } 
+}

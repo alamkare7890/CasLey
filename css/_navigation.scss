@@ -1,0 +1,101 @@
+.navigation{
+    justify-content: space-between;
+    z-index: 0;
+    padding-top: 15px;
+    .logo{
+        z-index: 5;
+        padding-left: 15px;
+        justify-content: center;
+        img{
+            width: 80px;
+            height: 60px;
+            object-fit: contain;
+        }
+        span{
+            color: $mainColor;
+            font-size: 1.2rem;
+        }
+    }
+    .ham-menu{
+        padding-right: 15px;
+
+        .menu-btn{
+            width: 45px;
+            height: 45px;
+            position: relative;
+            transition: all 0.4s linear;
+            display: flex;
+            border-radius: 5px;
+            @extend %flexCenter;
+            cursor: pointer;
+            z-index: 5;
+        } 
+
+        .menu-btn::before{
+            content: " ";
+            position: absolute;
+            width: 85%;
+            height: 5%;
+            background-color: $mainColor;
+            box-shadow: 0 15px 0 0 $mainColor;
+            transform: translateY(-15px);
+            transition: all 0.4s linear;
+
+        }   
+        .menu-btn::after{
+            content: " ";
+            position: absolute;
+            width: 85%;
+            height: 5%;
+            background-color: $mainColor;
+            transform: translateY(15px);
+            transition: all 0.4s linear;
+
+        }
+        .menu-btn.active::before{
+            box-shadow: none;
+            transform: translateY(0) rotate(45deg);
+        }
+        .menu-btn.active::after{
+            transform: translateY(0) rotate(-45deg);
+        } 
+    }
+
+    
+
+
+}
+.navbar-item{
+    width: 100%;    
+    position: relative;
+    ul{
+        height: 100vh;
+        position: fixed;
+        right: 100%;
+        width: 100%;
+        z-index: 0;
+
+        li{
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                font-size: 2.8rem;
+
+            }
+        }
+
+    }
+
+    ul::before{
+        content: "";
+        position: absolute; 
+        top: -75px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: -5;
+    }   
+}
