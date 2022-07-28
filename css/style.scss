@@ -28,7 +28,7 @@ $mainColor: #FFFFFF;
     font-size: 16px;
 }
 
-html,body{
+html,body{ 
     width: 100%;
     height: 100%;
     font-family: $bodyFont;
@@ -47,6 +47,8 @@ body{
     width: 100vw;
     height: 100vh;  
     z-index: 2;
+    position: relative; 
+
 }
 .hero-head{
     font-size: 5rem;
