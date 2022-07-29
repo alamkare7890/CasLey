@@ -1,8 +1,7 @@
 /*=========Font-Variable========*/
 /*=========Color-Variable========*/
 .contact-section, .subscribe-section, .service-section, .project-section, .about-two, .about-section {
-  padding: 50px 0;
-  z-index: 0;
+  padding: 60px 0;
 }
 
 body {
@@ -11,7 +10,7 @@ body {
   background-size: cover;
 }
 
-.navigation .ham-menu .menu-btn, .icon {
+.navigation .ham-menu .menu-btn, .navigation .logo, .icon {
   justify-content: center;
   align-items: center;
 }
@@ -27,7 +26,8 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,8 +41,8 @@ body {
 #particles-js {
   width: 100vw;
   height: 100vh;
-  z-index: 0;
   position: fixed;
+  z-index: -1;
 }
 
 #particles-js::after {
@@ -57,7 +57,7 @@ body {
 }
 
 .hero-head {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #FFFFFF;
 }
@@ -112,20 +112,70 @@ body {
 }
 
 .all-head {
-  width: 50%;
-  padding: 30px 0;
+  margin-right: 50%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3960784314);
+  margin-bottom: 20px;
+}
+
+.detail-btn {
+  padding: 10px 15px 10px 0;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.icon-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon-btn .icon {
+  color: #037fd5;
+}
+.icon-btn span {
+  color: #FFFFFF;
+}
+
+.scroll-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  text-decoration: none;
+  color: #037fd5;
+  font-size: 1rem;
+}
+
+.scroll-top-btn:hover {
+  color: #495057;
+  text-decoration: none;
+}
+
+.icon-group {
+  padding-top: 10px;
+}
+.icon-group i {
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 /*--------nav-section-----------*/
 .navigation {
   justify-content: space-between;
   z-index: 0;
-  padding-top: 15px;
+  padding: 25px 0;
 }
 .navigation .logo {
   z-index: 5;
   padding-left: 15px;
-  justify-content: center;
 }
 .navigation .logo img {
   width: 80px;
@@ -143,9 +193,7 @@ body {
 .navigation .ham-menu .menu-btn {
   width: 45px;
   height: 45px;
-  position: fixed;
-  right: 20px;
-  top: 20px;
+  position: relative;
   transition: all 0.4s linear;
   display: flex;
   border-radius: 5px;
@@ -158,9 +206,11 @@ body {
   width: 85%;
   height: 5%;
   background-color: #FFFFFF;
+  background-attachment: fixed;
   box-shadow: 0 15px 0 0 #FFFFFF;
   transform: translateY(-15px);
   transition: all 0.4s linear;
+  z-index: 999;
 }
 .navigation .ham-menu .menu-btn::after {
   content: " ";
@@ -170,6 +220,7 @@ body {
   background-color: #FFFFFF;
   transform: translateY(15px);
   transition: all 0.4s linear;
+  z-index: 999;
 }
 .navigation .ham-menu .menu-btn.active::before {
   box-shadow: none;
@@ -190,7 +241,7 @@ body {
   left: 0;
   z-index: 100;
   width: 100vw;
-  background: rgba(51, 51, 51, 0.263);
+  background: rgba(51, 51, 51, 0.649);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -201,6 +252,7 @@ body {
 .navbar-item .nav-menu li {
   list-style-type: none;
   text-transform: uppercase;
+  z-index: 999;
 }
 .navbar-item .nav-menu li a {
   text-decoration: none;
@@ -239,11 +291,6 @@ body {
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
-.about-section .about-person .icon-group i {
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  padding-left: 15px;
-}
 
 .about-two .image img {
   width: 100%;
@@ -261,12 +308,6 @@ body {
 }
 .about-two .content p {
   padding: 10px 0;
-}
-.about-two .content a {
-  font-size: 1.2rem;
-  color: #FFFFFF;
-  padding: 0;
-  padding-bottom: 20px;
 }
 .about-two .content .icon-group a {
   font-size: 1.5rem;
@@ -356,8 +397,9 @@ body {
 }
 .subscribe-section .content form input {
   border: none;
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
   background: transparent;
+  border-radius: 0;
   outline: none;
   font-size: 18px;
 }
@@ -450,5 +492,430 @@ body {
   padding: 12px 20px;
   font-size: 0.85rem;
 }
+.contact-section .num span, .contact-section .email span {
+  padding-right: 10px;
+}
 
-/*--------footer-section-----------*//*# sourceMappingURL=style.css.map */
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+@media only screen and (min-width: 1680px) {
+  .about-section, .about-two, .project-section, .service-section, .subscribe-section, .contact-section {
+    padding: 60px 0;
+  }
+  .contact-section .contact-input input, .contact-section .contact-input textarea {
+    font-size: 16px;
+  }
+  html, body {
+    font-size: 24px;
+  }
+  .hero-head {
+    font-size: 4.5rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .small-head {
+    font-size: 1.8rem;
+  }
+  .sub-head {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 0.85rem;
+  }
+  .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-width {
+    max-width: 1680px;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .all-head {
+    margin-right: 50%;
+    padding: 30px 0;
+  }
+  .detail-btn {
+    padding: 10px 15px 10px 0;
+  }
+  .scroll-top-btn {
+    font-size: 1rem;
+  }
+  .scroll-top-btn:hover {
+    color: #495057;
+    text-decoration: none;
+  }
+  .icon-group i {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1680px) {
+  .about-section, .about-two, .project-section, .service-section, .subscribe-section, .contact-section {
+    padding: 60px 0;
+  }
+  .contact-section .contact-input input, .contact-section .contact-input textarea {
+    font-size: 16px;
+  }
+  html, body {
+    font-size: 20px;
+  }
+  .hero-head {
+    font-size: 3.5rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .small-head {
+    font-size: 1.8rem;
+  }
+  .sub-head {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 0.95rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+  }
+  .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-width {
+    max-width: 1270px;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .all-head {
+    margin-right: 50%;
+    padding: 30px 0;
+  }
+  .detail-btn {
+    padding: 10px 15px 10px 0;
+  }
+  .scroll-top-btn {
+    font-size: 1rem;
+  }
+  .scroll-top-btn:hover {
+    color: #495057;
+    text-decoration: none;
+  }
+  .icon-group i {
+    font-size: 1.5rem;
+  }
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 60px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 1200px) {
+  .about-section, .about-two, .project-section, .service-section, .subscribe-section, .contact-section {
+    padding: 60px 0;
+  }
+  .contact-section .contact-input input, .contact-section .contact-input textarea {
+    font-size: 16px;
+  }
+  html, body {
+    font-size: 16px;
+  }
+  .hero-head {
+    font-size: 4.5rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .small-head {
+    font-size: 1.8rem;
+  }
+  .sub-head {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 0.95rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+  }
+  .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-width {
+    max-width: 1680px;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .all-head {
+    margin-right: 0;
+    padding: 20px 0;
+  }
+  .detail-btn {
+    padding: 10px 15px 10px 0;
+  }
+  .scroll-top-btn {
+    font-size: 1rem;
+  }
+  .scroll-top-btn:hover {
+    color: #495057;
+    text-decoration: none;
+  }
+  .icon-group i {
+    font-size: 1.5rem;
+  }
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person {
+    margin-top: 20px;
+  }
+  .about-section .about-person img {
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    margin-bottom: 15px;
+  }
+  .about-two .image img {
+    height: 400px;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  .service-section .service {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .service-section .service svg {
+    height: 70px;
+    width: 70px;
+  }
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px;
+  }
+  .contact-section .contact-input textarea {
+    height: 160px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 991px) {
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  .about-two .content {
+    padding: 20px;
+    padding-left: 0;
+  }
+  .about-two .image img {
+    height: 360px;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .learning-header {
+    padding: 30px;
+  }
+  .project-section .learning-info .learning-footer {
+    padding: 30px;
+  }
+  .project-section .learning-info .image img {
+    height: 320px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 30px;
+  }
+  .contact-section .located {
+    margin-top: 20px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 576px) {
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 60px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 480px) {
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 60px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 380px) {
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 60px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}
+@media only screen and (max-width: 320px) {
+  /*--------nav-section-----------*/
+  /*--------header-section-----------*/
+  /*--------about-section-----------*/
+  .about-section .about-person img {
+    width: 95%;
+    height: 280px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  /*--------afterabout-section-----------*/
+  /*--------project-section-----------*/
+  .project-section .learning-info .image img {
+    height: 400px;
+  }
+  /*--------service-section-----------*/
+  /*--------Product-section-----------*/
+  .product-section .product {
+    margin-bottom: 40px;
+  }
+  .product-section .product .image img {
+    height: 280px;
+  }
+  /*--------Subscribe-section-----------*/
+  /*--------contact-section-----------*/
+  .contact-section .contact-input {
+    padding: 30px 60px;
+  }
+  /*--------footer-section-----------*/
+  /*--------footer-section-----------*/
+}/*# sourceMappingURL=style.css.map */

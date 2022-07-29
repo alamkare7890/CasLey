@@ -1,11 +1,11 @@
 .navigation{
     justify-content: space-between;
     z-index: 0;
-    padding-top: 15px;
+    padding: 25px 0;
     .logo{
         z-index: 5;
         padding-left: 15px;
-        justify-content: center;
+        @extend %flexCenter;
         img{
             width: 80px;
             height: 60px;
@@ -22,9 +22,7 @@
         .menu-btn{
             width: 45px;
             height: 45px;
-            position: fixed;
-            right: 20px;    
-            top:20px;
+            position: relative;
             transition: all 0.4s linear;
             display: flex;
             border-radius: 5px;
@@ -39,9 +37,11 @@
             width: 85%;
             height: 5%;
             background-color: $mainColor;
+            background-attachment: fixed;
             box-shadow: 0 15px 0 0 $mainColor;
             transform: translateY(-15px);
             transition: all 0.4s linear;
+            z-index: 999;
 
         }   
         .menu-btn::after{
@@ -52,6 +52,7 @@
             background-color: $mainColor;
             transform: translateY(15px);
             transition: all 0.4s linear;
+            z-index: 999;
 
         }
         .menu-btn.active::before{
@@ -77,7 +78,7 @@
         left: 0;
         z-index: 100;
         width: 100vw;
-        background: rgba(51, 51, 51, 0.263);
+        background: rgba(51, 51, 51, 0.649); 
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -86,7 +87,8 @@
         transition: all 0.8s linear;
         li{
             list-style-type: none;
-            text-transform: uppercase;
+            text-transform: uppercase;  
+            z-index: 999;
 
             a{
                 text-decoration: none;

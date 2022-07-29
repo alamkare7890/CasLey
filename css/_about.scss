@@ -7,16 +7,6 @@
             height: 300px;
             object-fit:scale-down;
         }
-
-        .icon-group{ 
-
-            i{
-                font-size: 1.5rem;
-                color: $mainColor;
-                padding-left: 15px;
-            }
-        }
-
     }
 
 
@@ -24,11 +14,8 @@
 }
 .about-two{
     @extend %section;
-        
-    .slide-content{
-    }
-
-    .image{
+     
+   .image{
 
         img{
             width: 100%;
@@ -47,12 +34,7 @@
         p{
             padding: 10px 0;
         }
-        a{
-            font-size: 1.2rem;
-            color: $mainColor;
-            padding: 0;
-            padding-bottom: 20px;
-        }
+    
         .icon-group{
 
             a{

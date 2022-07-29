@@ -1,0 +1,677 @@
+@media only screen and (min-width: 1680px){
+
+%section{
+    padding: 60px 0;
+}
+
+%inputSpace{
+    font-size: 16px;
+}
+
+html,body{ 
+    font-size: 24px;
+}
+.hero-head{
+    font-size: 4.5rem;
+}
+.heading{
+    font-size: 2.8rem;
+}
+.small-head{
+    font-size: 1.8rem;
+}
+.sub-head{
+    font-size: 1.5rem;
+}
+.para{
+    font-size: 0.85rem;
+
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-width{
+    max-width:  1680px;
+}
+.price{
+    font-size: 1.2rem;
+}
+.all-head{
+    margin-right: 50%;
+    padding: 30px 0;
+}
+.detail-btn{
+    padding: 10px 15px 10px 0;
+
+}
+.scroll-top-btn{
+    font-size: 1rem;
+}
+.scroll-top-btn:hover{
+    color: $inputColor; 
+    text-decoration: none;
+}
+
+.icon-group{ 
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+    
+}
+@media only screen and (min-width: 1200px) and (max-width:1680px){
+
+%section{
+    padding: 60px 0;
+}
+
+%inputSpace{
+    font-size: 16px;
+}
+
+html,body{ 
+    font-size: 20px;
+}
+.hero-head{
+    font-size: 3.5rem;
+}
+.heading{
+    font-size: 2.8rem;
+}
+.small-head{
+    font-size: 1.8rem;
+}
+.sub-head{
+    font-size: 1.5rem;
+}
+.para{
+    font-size: 0.95rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-width{
+    max-width:  1270px;
+}
+.price{
+    font-size: 1.2rem;
+}
+.all-head{
+    margin-right: 50%;
+    padding: 30px 0;
+}
+.detail-btn{
+    padding: 10px 15px 10px 0;
+
+}
+.scroll-top-btn{
+    font-size: 1rem;
+}
+.scroll-top-btn:hover{
+    color: $inputColor; 
+    text-decoration: none;
+}
+
+.icon-group{ 
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;     
+            height: 280px;
+            object-fit: scale-down;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 60px;
+        
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+
+    
+}
+@media only screen and (max-width:1200px){
+
+%section{
+    padding: 60px 0;
+}
+
+%inputSpace{
+    font-size: 16px;
+}
+
+html,body{ 
+    font-size: 16px;
+}
+.hero-head{
+    font-size: 4.5rem;
+}
+.heading{
+    font-size: 2.8rem;
+}
+.small-head{
+    font-size: 1.8rem;
+}
+.sub-head{
+    font-size: 1.5rem;
+}
+.para{
+    font-size: 0.95rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-width{
+    max-width:  1680px;
+}
+.price{
+    font-size: 1.2rem;
+}
+.all-head{
+    margin-right: 0;
+    padding: 20px 0;
+}
+.detail-btn{
+    padding: 10px 15px 10px 0;
+
+}
+.scroll-top-btn{
+    font-size: 1rem;
+}
+.scroll-top-btn:hover{
+    color: $inputColor; 
+    text-decoration: none;
+}
+
+.icon-group{ 
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+        margin-top: 20px;
+        img{
+            height: 280px;
+            object-fit: scale-down;
+            margin-bottom: 15px;
+        }
+
+    }
+
+}
+.about-two{
+
+    .image{
+
+        img{
+            height: 400px;
+        }
+    }
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+.service-section{
+    .service{
+        padding: 0;
+        margin-bottom: 15px;
+
+        svg{
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+}
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px;
+        
+        textarea{
+            height: 160px;
+        }
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+
+    
+}
+@media only screen and (max-width: 991px){ 
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+.about-two{
+
+    .content{
+        padding: 20px;
+        padding-left: 0;
+    }
+
+    .image{
+
+        img{
+            height: 360px;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .learning-header{
+            padding: 30px;        
+        }
+        .learning-footer{
+            padding: 30px;
+        }
+        .image{
+
+            img{
+                height: 320px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 30px;
+        
+    }
+    .located{
+        margin-top: 20px;
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}
+@media only screen and (max-width: 576px){
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;     
+            height: 280px;
+            object-fit: scale-down;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 60px;
+        
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}
+@media only screen and (max-width: 480px){
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;     
+            height: 280px;
+            object-fit: scale-down;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 60px;
+        
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}
+@media only screen and (max-width: 380px){
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;     
+            height: 280px;
+            object-fit: scale-down;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 60px;
+        
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}
+@media only screen and (max-width: 320px){
+
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+
+        img{
+            width: 95%;     
+            height: 280px;
+            object-fit: scale-down;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+
+        .image{
+
+            img{
+                height: 400px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 40px;
+        .image{
+            img{
+                height: 280px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 30px 60px;
+        
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}

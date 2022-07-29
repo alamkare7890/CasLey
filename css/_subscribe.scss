@@ -11,8 +11,9 @@
 
             input{
                 border: none;
-                border-bottom: 3px solid $mainColor;
-                background: transparent; 
+                border-bottom: 2px solid $mainColor;
+                background: transparent;    
+                border-radius: 0;
                 outline: none;      
                 font-size: 18px;
             } 
