@@ -18,3 +18,8 @@ $(document).ready(function () {
     })
 
 })
+$('#navBtn').click(function () {
+
+    $('#navOpen').toggleClass('nav-down');
+
+})
