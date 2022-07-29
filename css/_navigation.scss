@@ -4,7 +4,6 @@
     padding: 25px 0;
     .logo{
         z-index: 5;
-        padding-left: 15px;
         @extend %flexCenter;
         img{
             width: 80px;
@@ -17,7 +16,6 @@
         }
     }
     .ham-menu{
-        padding-right: 15px;
 
         .menu-btn{
             width: 45px;

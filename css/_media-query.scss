@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1680px){
 
 %section{
-    padding: 60px 0;
+    padding: 25px 0;
 }
 
 %inputSpace{
@@ -67,7 +67,7 @@ html,body{
 @media only screen and (min-width: 1200px) and (max-width:1680px){
 
 %section{
-    padding: 60px 0;
+    padding: 25px 0;
 }
 
 %inputSpace{
@@ -196,8 +196,8 @@ html,body{
 @media only screen and (max-width:1200px){
 
 %section{
-    padding: 60px 0;
-}
+    padding: 25px 0;
+} 
 
 %inputSpace{
     font-size: 16px;
@@ -248,12 +248,9 @@ html,body{
 
 }
 .scroll-top-btn{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
-.scroll-top-btn:hover{
-    color: $inputColor; 
-    text-decoration: none;
-}
+
 
 .icon-group{ 
 
@@ -348,7 +345,9 @@ html,body{
     
 }
 @media only screen and (max-width: 991px){ 
-
+%section{
+    padding: 20px 0;
+}
 /*--------nav-section-----------*/
 /*--------header-section-----------*/
 /*--------about-section-----------*/
@@ -431,7 +430,7 @@ html,body{
 
     
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
 
 /*--------nav-section-----------*/
 /*--------header-section-----------*/
@@ -442,11 +441,27 @@ html,body{
 
         img{
             width: 95%;     
-            height: 280px;
+            height: 180px;
             object-fit: scale-down;
+            margin: 5px;
         }
     }
 
+}
+.about-two{
+    .image{
+
+        img{
+            height: 300px;
+        }
+    }
+    .content{
+
+        h2{
+            left: 0;
+            width: 100%;
+        }
+    }
 }
 /*--------afterabout-section-----------*/
 /*--------project-section-----------*/
@@ -457,21 +472,142 @@ html,body{
         .image{
 
             img{
-                height: 400px;
+                height: 250px;
             }
         }
     }
 
 }
 /*--------service-section-----------*/
+.service-section{
+
+    .service{
+
+        svg{
+            width: 70px;
+        }
+    
+    }
+
+}
 /*--------Product-section-----------*/
 .product-section{
 
     .product{
-        margin-bottom: 40px;
         .image{
             img{
-                height: 280px;
+                height: 250px;
+            }
+        }
+    }
+
+}
+/*--------Subscribe-section-----------*/
+.subscribe-section{
+
+    .social-icon{
+        padding-top: 30px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+}
+/*--------contact-section-----------*/
+.contact-section{
+
+    .contact-input{
+        padding: 0;
+        padding-top: 30px;
+    }
+
+}
+/*--------footer-section-----------*/
+/*--------footer-section-----------*/
+
+    
+}
+@media only screen and (max-width: 576px){
+%section{
+
+    padding: 10px 0;
+
+}
+
+.hero-head{
+    font-size: 3rem;
+}
+.heading{
+    font-size: 2.5rem;
+}
+.small-head{
+    font-size: 1.5rem;
+}
+.sub-head{
+    font-size: 1.2rem;
+}
+.icon{
+    width: 40px;    
+    height: 40px;
+}
+.scroll-top-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+.icon-group{
+
+    i{
+        font-size: 1.2rem;
+    }
+}
+/*--------nav-section-----------*/
+/*--------header-section-----------*/
+/*--------about-section-----------*/
+.about-section{
+
+    .about-person{
+        margin: 20px 10px;
+        img{
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+/*--------afterabout-section-----------*/
+/*--------project-section-----------*/
+.project-section{
+
+    .learning-info{
+        margin: 20px 10px;
+        .image{
+            margin-bottom: 30px;
+            img{
+                height: 250px;
+            }
+        }
+    }
+
+}
+/*--------service-section-----------*/
+.service-section{
+
+    .service{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+        padding: 10px 0;
+
+    }
+}
+/*--------Product-section-----------*/
+.product-section{
+
+    .product{
+        margin-bottom: 30px;
+        .image{
+            img{
+                height: 250px;
             }
         }
     }
@@ -482,10 +618,11 @@ html,body{
 .contact-section{
 
     .contact-input{
-        padding: 30px 60px;
-        
-    }
 
+        .send-box{
+            text-align: center;
+        }
+    }
 }
 /*--------footer-section-----------*/
 /*--------footer-section-----------*/
@@ -502,12 +639,19 @@ html,body{
     .about-person{
 
         img{
-            width: 95%;     
-            height: 280px;
-            object-fit: scale-down;
+            height: 220px;
         }
     }
 
+}
+.about-two{
+
+    .image{
+
+        img{
+            height: 220px;
+        }
+    }
 }
 /*--------afterabout-section-----------*/
 /*--------project-section-----------*/
@@ -515,24 +659,44 @@ html,body{
 
     .learning-info{
 
-        .image{
+        .learning-footer{
+            padding: 0 30px 0 30px;
+        }
 
+        .learning-header{
+            padding: 40px 0 0 40px;
+        }
+
+
+        .image{
+            margin-bottom: 0;
             img{
-                height: 400px;
+                height: 220px;
             }
         }
     }
 
 }
 /*--------service-section-----------*/
+.service-section{
+
+    .service{
+
+        svg{
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+}
 /*--------Product-section-----------*/
 .product-section{
 
     .product{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         .image{
             img{
-                height: 280px;
+                height: 220px;
             }
         }
     }
@@ -540,136 +704,38 @@ html,body{
 }
 /*--------Subscribe-section-----------*/
 /*--------contact-section-----------*/
-.contact-section{
 
-    .contact-input{
-        padding: 30px 60px;
         
-    }
 
-}
 /*--------footer-section-----------*/
 /*--------footer-section-----------*/
 
     
 }
 @media only screen and (max-width: 380px){
-
+.hero-head{
+    font-size: 2.5rem;
+}
 /*--------nav-section-----------*/
 /*--------header-section-----------*/
-/*--------about-section-----------*/
-.about-section{
+.header-section{
 
-    .about-person{
+    .header-content{
 
-        img{
-            width: 95%;     
-            height: 280px;
-            object-fit: scale-down;
+        h1{
+            font-size: 2.5rem;
         }
     }
-
 }
+/*--------about-section-----------*/
+
 /*--------afterabout-section-----------*/
 /*--------project-section-----------*/
-.project-section{
-
-    .learning-info{
-
-        .image{
-
-            img{
-                height: 400px;
-            }
-        }
-    }
-
-}
 /*--------service-section-----------*/
 /*--------Product-section-----------*/
-.product-section{
 
-    .product{
-        margin-bottom: 40px;
-        .image{
-            img{
-                height: 280px;
-            }
-        }
-    }
-
-}
 /*--------Subscribe-section-----------*/
 /*--------contact-section-----------*/
-.contact-section{
-
-    .contact-input{
-        padding: 30px 60px;
-        
-    }
-
-}
-/*--------footer-section-----------*/
-/*--------footer-section-----------*/
-
-    
-}
-@media only screen and (max-width: 320px){
-
-/*--------nav-section-----------*/
-/*--------header-section-----------*/
-/*--------about-section-----------*/
-.about-section{
-
-    .about-person{
-
-        img{
-            width: 95%;     
-            height: 280px;
-            object-fit: scale-down;
-        }
-    }
-
-}
-/*--------afterabout-section-----------*/
-/*--------project-section-----------*/
-.project-section{
-
-    .learning-info{
-
-        .image{
-
-            img{
-                height: 400px;
-            }
-        }
-    }
-
-}
-/*--------service-section-----------*/
-/*--------Product-section-----------*/
-.product-section{
-
-    .product{
-        margin-bottom: 40px;
-        .image{
-            img{
-                height: 280px;
-            }
-        }
-    }
-
-}
-/*--------Subscribe-section-----------*/
-/*--------contact-section-----------*/
-.contact-section{
-
-    .contact-input{
-        padding: 30px 60px;
-        
-    }
-
-}
 /*--------footer-section-----------*/
 /*--------footer-section-----------*/
 

@@ -9,6 +9,22 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false,
+        
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                
+                
+                }
+            
+            }      
+        ],
+        
+        
+        
     })
 
     $(".slide-photo").slick({
