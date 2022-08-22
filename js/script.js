@@ -33,9 +33,10 @@ $(document).ready(function () {
         arrows: false,
     })
 
-})
-$('#navBtn').click(function () {
+    $('#navBtn').click(function () {
 
-    $('#navOpen').toggleClass('nav-down');
+        $('#navOpen').toggleClass('nav-down');
+        $('body').toggleClass('scroll-stop');
 
+    })
 })

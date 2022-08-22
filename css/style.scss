@@ -28,12 +28,29 @@ $mainColor: #FFFFFF;
     font-size: 16px;
 }
 
+*::-webkit-scrollbar{
+    width: 7px;
+}
+*::-webkit-scrollbar-track{
+    background-color: #037dd53b;
+
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #037fd5;
+
+}
+
 html,body{ 
     width: 100%;
     height: 100%;
     font-family: $bodyFont;  
     font-size: 18px;
     scroll-behavior: smooth;
+    
+}
+.srcoll-stop{
+    height: 100%;
+    overflow: hidden;
 }
 body{
     height: 100vh;
@@ -41,9 +58,8 @@ body{
     background-image: url(../image/jpg/bg-default.jpg);
     background-attachment: fixed;
     position: relative;
-    z-index: -1;
 
-}       
+}     
 #particles-js{
     width: 100vw;
     height: 100vh;  
@@ -71,6 +87,10 @@ body{
     color: $mainColor;
 
 
+}
+a{
+    text-decoration: none;
+    transition: all 0.4s linear;
 }
 .small-head{
     font-size: 1.8rem;
@@ -150,7 +170,7 @@ body{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
+    z-index: 999;
     text-decoration: none;
     color: $btnColor; 
     font-size: 1rem;
@@ -166,6 +186,9 @@ body{
         font-size: 1.5rem;
         color: $mainColor;
     }
+}
+.btn:focus{
+    box-shadow: none;
 }
 
 /*--------nav-section-----------*/

@@ -16,11 +16,12 @@
         }
     }
     .ham-menu{
-
         .menu-btn{
             width: 45px;
             height: 45px;
-            position: relative;
+            position: fixed;
+            right: 2%;
+            transform: translateX(-2%);
             transition: all 0.4s linear;
             display: flex;
             border-radius: 5px;
@@ -71,14 +72,16 @@
     position: relative;
     .nav-menu{
         height: 100vh;
+        padding: 0;
+        width: 100vw;
+        max-height: 850px;
+        overflow-y: scroll;
         position: fixed;
         top: -100%;
         left: 0;
         z-index: 100;
-        width: 100vw;
         background: rgba(51, 51, 51, 0.649); 
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -86,7 +89,6 @@
         li{
             list-style-type: none;
             text-transform: uppercase;  
-            z-index: 999;
 
             a{
                 text-decoration: none;
